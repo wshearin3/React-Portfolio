@@ -1,7 +1,15 @@
-function Header () {
-    const text = 'Bio Text'
+import React from 'react';
+import headshot from '/Headshot.jpg';
 
-    return <h1>Here is my {text}</h1>;
+function Header () {
+    return ( 
+    <section className='Header'>
+    <h1>Trey Shearin</h1>
+    <div>
+        <img src={headshot} alt="Trey Headshot"/>
+    </div>
+    </section>
+);
 }
 
 export default Header;
