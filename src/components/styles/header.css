@@ -1,3 +1,8 @@
-.Header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#header-box {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+p {
+    margin-top: 20px;
 }
