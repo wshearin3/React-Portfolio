@@ -1,7 +1,12 @@
 import Header from './components/Header';
+import AboutMe from './components/AboutMe';
 
 function App() {
-    return <Header />;
+    return (
+    <Header />,
+    <AboutMe />
+    
+    );
 }
 
 export default App;
