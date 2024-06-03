@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "client": "cd public && npm start",
+    "dev": "concurrently \"npm run public\" \"npm run server\"",
+    "build": "cd public && npm run build",
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
