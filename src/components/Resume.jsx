@@ -1,11 +1,11 @@
 import React from 'react';
-import resume from '/resume.pdf';
+//import resume from '/resume.pdf';
 
 function Resume() {
     return (
         <section className="resume">
             <h2>Resume</h2>
-            <a href={resume} download>Download My Resume</a>
+            <a >Download My Resume</a>
             <h3>Proficiencies</h3>
             <ul>
                 <li>HTML</li>
