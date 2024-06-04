@@ -11,8 +11,8 @@ function App() {
     <Header />
     <AboutMe />
     <Portfolio />
-    <Footer />
     <Contact />
+    <Footer />
     </div>
     );
 }
