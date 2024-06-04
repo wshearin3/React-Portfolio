@@ -37,8 +37,32 @@ function Contact() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
+    let valid = true;
+    let errors = {};
+
+    if (!formData.name) {
+      errors.name = 'Name is required';
+      valid = false;
+    }
+    if (!formData.email) {
+      errors.email = 'Email is required';
+      valid = false;
+    } else if (!validateEmail(formData.email)) {
+      errors.email = 'Invalid email address';
+      valid = false;
+    }
+    if (!formData.message) {
+      errors.message = 'Message is required';
+      valid = false;
+    }
+
+    if (!valid) {
+      setErrors(errors);
+      return;
+    }
+
+    
+    console.log('Form submitted:', formData);
   };
 
   return (
