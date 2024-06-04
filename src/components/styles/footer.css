@@ -1,0 +1,6 @@
+.contact-links {
+   display: flex;
+   flex-direction: row;
+   padding-right: 25px;
+   margin-bottom: 20px;
+}
